@@ -50,7 +50,7 @@ function App() {
     <div className="container">
       <ProfileCard onClick={handleClick} statusD={Daily} statusW={Weekly} statusM={Monthly} />
       {timeframes.length > 0 ? timeframes.map((timeframe,index) => (
-        <Cards key={index} Title={timeframe} />
+        <Cards key={index} Title={timeframe} statusD={Daily} statusW={Weekly} statusM={Monthly} />
       )) : 'Loading...'}
     </div>
   );
